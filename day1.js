@@ -58,8 +58,32 @@
 
     }
 
-    // console.log(evenLengthFriends(['ak','rakib','sakib','asasas','dabo']))
+  
 
 
   
-    
+    /**
+ * ========= === practice Problem 3=== =================
+ * 
+        * Write an arrow function where it will do the following:
+        a) Square each array element
+        b) Calculate the sum of the squared elements
+        c) Return the average of the sum of the squared elements
+        Print the result. 
+
+
+ * 
+ * ============================================
+ */
+
+
+const makeSqrt= (numbers) =>{
+   let  addNumber =0 ;
+   for(const number of numbers){
+const sqrt = number* number
+addNumber +=sqrt
+   }
+return addNumber
+}
+const result = makeSqrt([3,6,9,10])
+console.log(result)
