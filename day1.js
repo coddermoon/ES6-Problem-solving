@@ -85,5 +85,27 @@ addNumber +=sqrt
    }
 return addNumber
 }
-const result = makeSqrt([3,6,9,10])
+
+
+
+/**
+ * ========= === practice Problem 4=== =================
+        Write an arrow function where it will do the following:
+        a) It will take two array inputs
+        b) Combine the two arrays and assign them in a new array
+        c) Find the maximum number from the new array and return the
+        result
+        Print the result. 
+
+
+ * ============================================
+ */
+
+const addTwoArr = (arr1,arr2 = [])=>{
+const newArray = [...arr1,...arr2]
+const maximum = Math.max(...newArray)
+return maximum
+}
+
+const result = addTwoArr([1,2,3,4],[4,5,6])
 console.log(result)
