@@ -31,4 +31,35 @@
 
     const deafult = (num1,num2=6)=> num1+num2
 
+    /**
+ * ========= === practice Problem 2=== =================
+ * 
+    * Write an arrow function where it will do the following:
+    a) It will take an array where the array elements will be the
+    name of your friends
+    b) Check if the length of each element is even, push elements
+    with even length to a new array and return the result
+    Print the result. 
+
+ * 
+ * ============================================
+ */
+
+    const evenLengthFriends = (friends)=>{
+        const friendList = []
+        
+        for(const friend of friends){
+          
+            if (friend.length % 2===0) {
+                friendList.push(friend)
+            }
+        }
+        return friendList
+
+    }
+
+    // console.log(evenLengthFriends(['ak','rakib','sakib','asasas','dabo']))
+
+
+  
     
